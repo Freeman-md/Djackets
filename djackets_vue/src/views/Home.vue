@@ -25,7 +25,7 @@
           <h3 class="is-size-4">{{product.name}}</h3>
           <p class="is-size-6 has-text-grey">${{product.price}}</p>
 
-          View Details
+          <router-link :to="product.get_absolute_url" class="mt-4 button is-dark">View Details</router-link>
         </div>
       </div>
     </div>
