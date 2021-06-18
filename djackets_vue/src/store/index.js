@@ -40,12 +40,12 @@ export default createStore({
             state.isLoading = status
         },
         setToken(state, token) {
-            this.token = token
-            this.isAuthenticated = true
+            state.token = token
+            state.isAuthenticated = true
         },
-        setToken(state, token) {
-            this.token = ''
-            this.isAuthenticated = false
+        removeToken(state, token) {
+            state.token = ''
+            state.isAuthenticated = false
         }
     },
     actions: {},
